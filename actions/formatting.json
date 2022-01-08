@@ -6,8 +6,8 @@
       "matchManagers": ["github-actions"],
       "matchPackagePatterns": ["*"],
       "prBodyDefinitions": {
-        "Package": "[{{{depName}}}]({{{sourceUrl}}})",
-        "Change": "[`{{{currentVersion}}}` -> `{{{newVersion}}}`]({{{sourceUrl}}}/compare/{{{currentVersion}}}..{{{newVersion}}})"
+        "Package": "[{{{depName}}}](https://github.com/{{{depName}}})",
+        "Change": "[`{{{currentValue}}}` -> `{{{newValue}}}`](https://github.com/{{{depName}}}/compare/{{{currentValue}}}..{{{newValue}}})"
       }
     }
   ]

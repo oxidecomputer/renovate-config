@@ -7,7 +7,7 @@
       "matchPackagePatterns": ["*"],
       "prBodyDefinitions": {
         "Package": "[{{{depName}}}](https://github.com/{{{depName}}})",
-        "Change": "{{{#if newValue}}}[`{{{currentValue}}}` -> `{{{newValue}}}`](https://github.com/{{{depName}}}/compare/{{{currentValue}}}..{{{newValue}}}){{{/if}}}{{{#if newDigest}}}[`{{{currentDigest}}}` -> `{{{newDigest}}}`](https://github.com/{{{depName}}}/compare/{{{currentDigest}}}..{{{newDigest}}}){{{/if}}}"
+        "Change": "{{#if newValue}}[`{{{currentValue}}}` -> `{{{newValue}}}`](https://github.com/{{{depName}}}/compare/{{{currentValue}}}..{{{newValue}}}){{/if}}{{#if newDigest}}[`{{{currentDigest}}}` -> `{{{newDigest}}}`](https://github.com/{{{depName}}}/compare/{{{currentDigest}}}..{{{newDigest}}}){{/if}}"
       }
     }
   ]

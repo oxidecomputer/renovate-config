@@ -7,7 +7,7 @@
       "matchPackagePatterns": ["*"],
       "prBodyDefinitions": {
         "Package": "[{{{depName}}}](https://github.com/{{{depName}}})",
-        "Change": "[`{{{displayFrom}}}` -> `{{{displayTo}}}`](https://github.com/{{{depName}}}/compare/{{{displayFrom}}}..{{{displayTo}}})"
+        "Change": "[`{{{displayFrom}}}` -> `{{{displayTo}}}`](https://github.com/{{{depName}}}/compare/{{{displayFrom}}}...{{{displayTo}}})"
       }
     }
   ]

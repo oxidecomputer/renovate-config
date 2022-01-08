@@ -1,0 +1,5 @@
+{
+  "$schema": "https://docs.renovatebot.com/renovate-schema.json",
+  "description": "Apply Oxide's default github actions preset",
+  "extends": ["github>oxidecomputer/renovate-config//actions/formatting"]
+}

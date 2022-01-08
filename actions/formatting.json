@@ -1,0 +1,14 @@
+{
+  "$schema": "https://docs.renovatebot.com/renovate-schema.json",
+  "description": "Format GitHub action updates",
+  "packageRules": [
+    {
+      "matchManagers": ["github-actions"],
+      "matchPackagePatterns": ["*"],
+      "prBodyDefinitions": {
+        "Package": "[{{{depName}}}]({{{sourceUrl}}})",
+        "Change": "[`{{{currentVersion}}}` -> `{{{newVersion}}}`]({{{sourceUrl}}}/compare/{{{currentVersion}}}..{{{newVersion}}})"
+      }
+    }
+  ]
+}

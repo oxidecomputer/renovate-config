@@ -3,6 +3,7 @@
   "description": "Apply Oxide's global renovate preset",
   "extends": [
     "github>oxidecomputer/renovate-config:rust",
+    "github>oxidecomputer/renovate-config:actions",
     ":dependencyDashboard"
   ]
 }

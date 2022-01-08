@@ -1,6 +1,6 @@
 {
   "$schema": "https://docs.renovatebot.com/renovate-schema.json",
-  "description": "Oxide's default rust configuration",
+  "description": "Apply Oxide's default rust preset",
   "extends": [
     "github>oxidecomputer/renovate-config//rust/toolchain",
     "github>oxidecomputer/renovate-config//rust/crates"

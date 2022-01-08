@@ -1,6 +1,6 @@
 {
   "$schema": "https://docs.renovatebot.com/renovate-schema.json",
-  "description": "Controls how rust crates are updated (or not)",
+  "description": "Enable crate updates in the dependency dashboard",
   "packageRules": [
     {
       "matchDatasources": ["crate"],

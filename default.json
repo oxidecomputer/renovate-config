@@ -1,6 +1,6 @@
 {
   "$schema": "https://docs.renovatebot.com/renovate-schema.json",
-  "description": "Oxide's global shared renovate config. Anything included here will be included for all repos in the Oxide org.",
+  "description": "Apply Oxide's global renovate preset",
   "extends": [
     "github>oxidecomputer/renovate-config:rust",
     ":dependencyDashboard"

@@ -1,6 +1,6 @@
 {
   "$schema": "https://docs.renovatebot.com/renovate-schema.json",
-  "description": "Upgrades the `channel` field in the `rust-toolchain.toml` file",
+  "description": "Upgrade the `channel` field in the `rust-toolchain.toml` file if present",
   "regexManagers": [
     {
       "fileMatch": ["^rust-toolchain\\.toml?$"],

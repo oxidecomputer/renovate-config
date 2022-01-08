@@ -1,0 +1,10 @@
+{
+  "$schema": "https://docs.renovatebot.com/renovate-schema.json",
+  "description": "Controls how rust crates are updated (or not)",
+  "packageRules": [
+    {
+      "matchManagers": ["cargo"],
+      "dependencyDashboardApproval": true
+    }
+  ]
+}

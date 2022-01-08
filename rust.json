@@ -1,0 +1,5 @@
+{
+  "$schema": "https://docs.renovatebot.com/renovate-schema.json",
+  "description": "Oxide's default rust configuration",
+  "extends": ["github>oxidecomputer/renovate-config//rust/toolchain"]
+}

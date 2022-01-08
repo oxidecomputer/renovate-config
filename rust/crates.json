@@ -3,7 +3,7 @@
   "description": "Controls how rust crates are updated (or not)",
   "packageRules": [
     {
-      "matchDatasources": ["crates"],
+      "matchDatasources": ["crate"],
       "matchPackagePatterns": ["*"],
       "dependencyDashboardApproval": true
     }

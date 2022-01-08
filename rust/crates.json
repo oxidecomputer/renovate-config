@@ -4,6 +4,7 @@
   "packageRules": [
     {
       "matchManagers": ["cargo"],
+      "matchPackagePatterns": ["*"],
       "dependencyDashboardApproval": true
     }
   ]

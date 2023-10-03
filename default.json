@@ -1,7 +1,6 @@
 {
   "$schema": "https://docs.renovatebot.com/renovate-schema.json",
   "description": "Apply Oxide's global renovate preset",
-  "reviewers": ["zephraph"],
   "extends": [
     "github>oxidecomputer/renovate-config:rust",
     "github>oxidecomputer/renovate-config:actions",

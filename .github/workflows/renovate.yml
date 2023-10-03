@@ -1,6 +1,19 @@
 name: Renovate
 
 on:
+  workflow_dispatch:
+    inputs:
+      log-level:
+        description: "Log level"
+        required: true
+        default: "INFO"
+        type: choice
+        options:
+          - "TRACE"
+          - "DEBUG"
+          - "INFO"
+          - "WARN"
+          - "ERROR"
   schedule:
     - cron: "0/15 * * * *"
 
@@ -10,6 +23,8 @@ concurrency:
 jobs:
   renovate:
     runs-on: ubuntu-latest
+    env:
+      LOG_LEVEL: ${{ github.event.inputs.log-level || 'INFO' }}
     steps:
       - name: Checkout
         uses: actions/checkout@8ade135a41bc03ea155e62e844d188df1ea18608 # v4.1.0
@@ -25,3 +40,4 @@ jobs:
         with:
           configurationFile: runner/global.json
           token: ${{ steps.create_installation_token.outputs.token }}
+          env-regex: "^(?:RENOVATE_\\w+|LOG_LEVEL)$"

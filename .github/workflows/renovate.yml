@@ -36,7 +36,10 @@ jobs:
           installation_retrieval_mode: id
           installation_retrieval_payload: ${{ secrets.INSTALLATION_ID }}
           private_key: ${{ secrets.PRIVATE_KEY }}
-      - run: "echo 'The created token is masked: ${{ steps.create_token.outputs.token }}'"
+      - run: "echo 'The created token is masked: ${{ steps.create_token.output.token }}'"
+      - run: "echo 'The created token is masked: ${{ steps.create_token }}'"
+      - run: "echo 'The created token is masked: ${{ steps.create_token.output }}'"
+      - run: "echo 'The created token is masked: ${{ steps.create_token.outputs }}'"
       - name: Self-hosted Renovate
         uses: renovatebot/github-action@3cef36a9aba515d8726b491905b3bc766832e221 # v39.0.5
         with:

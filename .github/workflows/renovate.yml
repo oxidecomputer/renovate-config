@@ -1,0 +1,23 @@
+name: Renovate
+
+concurrency:
+  group: renovate
+
+jobs:
+  renovate:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@8ade135a41bc03ea155e62e844d188df1ea18608 # v4.1.0
+      - name: create_installation_token
+        uses: tibdex/github-app-token@v3beb63f4bd073e61482598c45c71c1019b59b73a # v2.1.0
+        with:
+          app_id: ${{ secrets.APP_ID }}
+          installation_retrieval_mode: id
+          installation_retrieval_payload: ${{ secrets.INSTALLATION_ID }}
+          private_key: ${{ secrets.PRIVATE_KEY }}
+      - name: Self-hosted Renovate
+        uses: renovatebot/github-action@3cef36a9aba515d8726b491905b3bc766832e221 # v39.0.5
+        with:
+          configurationFile: runner/global.json
+          token: ${{ steps.create_installation_token.outputs.token }}

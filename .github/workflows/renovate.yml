@@ -1,5 +1,9 @@
 name: Renovate
 
+on:
+  schedule:
+    - cron: "0/15 * * * *"
+
 concurrency:
   group: renovate
 

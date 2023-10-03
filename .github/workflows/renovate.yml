@@ -23,7 +23,7 @@ concurrency:
 jobs:
   renovate:
     runs-on: ubuntu-latest
-    environment: release
+    environment: prod
     env:
       LOG_LEVEL: ${{ github.event.inputs.log-level || 'INFO' }}
     steps:

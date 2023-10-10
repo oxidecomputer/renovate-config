@@ -14,7 +14,20 @@ If your repository requires the use of post upgrade scripts, then you will need 
 
 Any presets that you want to enable across all repos with Renovate enabled in Oxide's GitHub organization can be added to `default.json`. Avoid putting any rules directly in default, instead using separate preset files for a cleaner configuration.
 
+## Rust configuration
+
+By default, the Rust configuration does not automatically create branches (instead requiring users
+to manually check for dependencies). To enable automatic branch creation, in your repository's
+`renovate.json`, extend from `local>oxidecomputer/renovate-config:rust/autocreate` _after_ extending
+from the global preset.
+
 ## Running post upgrade scripts
+
+To run post-upgrade scripts:
+
+1. Check in an executable script at the location `tools/renovate-post-upgrade.sh` in your repository.
+2. Ensure you're using self-hosted Renovate, and add your repository to the list in the [global config](runner/global.json).
+2. In your repository's `renovate.json`, extend from `local>oxidecomputer/renovate-config:post-upgrade`.
 
 ## More info
 

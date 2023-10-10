@@ -1,0 +1,14 @@
+{
+  "$schema": "https://docs.renovatebot.com/renovate-schema.json",
+  "description": "Automatically create pull requests for Rust crate updates (recommended for binaries)",
+  "lockFileMaintenance": {
+    "enabled": true
+  },
+  "packageRules": [
+    {
+      "matchDatasources": ["crate"],
+      "matchPackagePatterns": ["*"],
+      "dependencyDashboardApproval": false
+    }
+  ]
+}

@@ -5,6 +5,7 @@
   ],
   "platform": "github",
   "repositories": [
+    "oxidecomputer/omicron",
     "oxidecomputer/projectv2-tests"
   ],
   "allowedPostUpgradeCommands": [

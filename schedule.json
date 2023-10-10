@@ -1,0 +1,7 @@
+{
+  "$schema": "https://docs.renovatebot.com/renovate-schema.json",
+  "description": "Set schedule for automatic branch creation and merging, if enabled",
+  "timezone": "America/Los_Angeles",
+  "schedule": ["after 8pm", "before 6am"],
+  "automergeSchedule": ["after 8pm", "before 6am"]
+}

@@ -14,8 +14,40 @@ If your repository requires the use of post upgrade scripts, then you will need 
 
 Any presets that you want to enable across all repos with Renovate enabled in Oxide's GitHub organization can be added to `default.json`. Avoid putting any rules directly in default, instead using separate preset files for a cleaner configuration.
 
+## Rust configuration
+
+By default, the Rust configuration does not automatically create branches (instead requiring users
+to manually approve dependencies in the dependency dashboard).
+
+To enable automatic branch creation, in your repository's `renovate.json`, extend from
+`local>oxidecomputer/renovate-config//rust/autocreate` _after_ extending from the global preset.
+This will enable:
+
+- Automatic branch creation for dependencies
+- Lockfile updates every Monday morning Pacific time
+
 ## Running post upgrade scripts
+
+To run post-upgrade scripts:
+
+1. Check in an executable script at the location `tools/renovate-post-upgrade.sh` in your repository.
+2. Ensure you're using self-hosted Renovate, and add your repository to the list in the [global config](runner/global.json).
+3. In your repository's `renovate.json`, extend from `local>oxidecomputer/renovate-config:post-upgrade`.
 
 ## More info
 
 To learn more about how to include these shared config files in your own Renovate setup see Renovate's [preset hosting](https://docs.Renovatebot.com/config-presets/#preset-hosting) documentation.
+
+## Future plans
+
+### Pinning GitHub Actions digests
+
+We may make it requirement very soon for GitHub Actions digests to be pinned to a hash. For now, extend from `helpers:pinGitHubActionDigests` to enable this behavior.
+
+If you have access to Oxide RFDs, see [RFD 434](https://rfd.shared.oxide.computer/rfd/0434) for more.
+
+### Automatic merges
+
+We currently do not perform any automatic merges of dependency PRs, but in the near future we might
+want to enable automerges for allowlisted crates on an opt-in basis. Instructions to do so will be
+added here.

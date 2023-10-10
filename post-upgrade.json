@@ -1,4 +1,6 @@
 {
+  "$schema": "https://docs.renovatebot.com/renovate-schema.json",
+  "description": "Run post-upgrade script at tools/renovate-post-upgrade.sh",
   "packageRules": [
     {
       "postUpgradeTasks": {

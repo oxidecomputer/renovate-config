@@ -7,5 +7,6 @@
     "github>oxidecomputer/renovate-config:actions",
     "github>oxidecomputer/renovate-config:ignores",
     ":dependencyDashboard"
-  ]
+  ],
+  "addLabels": ["dependencies"]
 }

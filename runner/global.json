@@ -6,7 +6,8 @@
   "platform": "github",
   "repositories": [
     "oxidecomputer/omicron",
-    "oxidecomputer/projectv2-tests"
+    "oxidecomputer/projectv2-tests",
+    "oxidecomputer/reflector"
   ],
   "allowedPostUpgradeCommands": [
     "^tools/renovate-post-upgrade.sh$"

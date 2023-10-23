@@ -1,0 +1,26 @@
+{
+  "$schema": "https://docs.renovatebot.com/renovate-schema.json",
+  "description": "Pin GitHub Actions digests and automatically merge allowlisted projects",
+  "extends": [
+    "helpers:pinGitHubActionDigests"
+  ],
+  "packageRules": [
+    {
+      "matchDepTypes": [
+        "action"
+      ],
+      "matchSourceUrls": [
+        "https://github.com/actions/checkout",
+        "https://github.com/taiki-e/create-gh-release-action",
+        "https://github.com/taiki-e/install-action",
+        "https://github.com/taiki-e/upload-rust-binary-action"
+      ],
+      "matchUpdateTypes": [
+        "minor",
+        "patch",
+        "digest"
+      ],
+      "automerge": true
+    }
+  ]
+}

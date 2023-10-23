@@ -20,7 +20,8 @@
         "patch",
         "digest"
       ],
-      "automerge": true
+      "automerge": true,
+      "rebaseWhen": "conflicted"
     }
   ]
 }

@@ -44,7 +44,7 @@ To learn more about how to include these shared config files in your own Renovat
 
 We may make it a requirement very soon for GitHub Actions digests to be pinned to a hash. To enable
 pinning, plus automerging updates to some allowlisted actions (to reduce developer burden), extend
-from `local>oxidecomputer/renovate-config:actions/pin` in your `renovate.json`.
+from `local>oxidecomputer/renovate-config//actions/pin` in your `renovate.json`.
 
 If you have access to Oxide RFDs, see [RFD 434](https://rfd.shared.oxide.computer/rfd/0434) for more.
 

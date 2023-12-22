@@ -7,6 +7,7 @@
   "repositories": [
     "oxidecomputer/omicron",
     "oxidecomputer/opte",
+    "oxidecomputer/maghemite",
     "oxidecomputer/milestone-collector",
     "oxidecomputer/projectv2-tests",
     "oxidecomputer/reflector",

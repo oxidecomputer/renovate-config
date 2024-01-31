@@ -9,6 +9,7 @@
     "oxidecomputer/opte",
     "oxidecomputer/maghemite",
     "oxidecomputer/milestone-collector",
+    "oxidecomputer/newtype-uuid",
     "oxidecomputer/projectv2-tests",
     "oxidecomputer/reflector",
     "oxidecomputer/rfd-api",

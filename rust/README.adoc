@@ -19,4 +19,5 @@ The following crates are currently excluded from consideration:
 - `vsss-rs`: Relatively delicate part of omicron (trust quorum), has shipped breakages in the past.
 See https://github.com/oxidecomputer/renovate-config/issues/20[issue #20].
 
-NOTE: If you're excluding a new crate, be sure to add information about it, and why.
+NOTE: If you're excluding a new crate, be sure to add information about it to this section,
+including the reason(s) for exclusion.

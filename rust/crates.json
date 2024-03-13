@@ -6,6 +6,11 @@
       "matchDatasources": ["crate"],
       "matchPackagePatterns": ["*"],
       "dependencyDashboardApproval": true
+    },
+    {
+      "matchDatasources": ["crate"],
+      "matchPackageNames": ["vsss-rs"],
+      "enabled": false
     }
   ]
 }

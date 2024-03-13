@@ -1,0 +1,22 @@
+= Rust configuration
+
+== Automatic branch creation
+
+By default, the Rust configuration does not automatically create branches (instead requiring users
+to manually approve dependencies in the dependency dashboard).
+
+To enable automatic branch creation, in your repository's `renovate.json`, extend from
+`local>oxidecomputer/renovate-config//rust/autocreate` _after_ extending from the global preset.
+This will enable:
+
+- Automatic branch creation for dependencies
+- Lockfile updates every Monday morning Pacific time
+
+== Exclusions
+
+The following crates are currently excluded from consideration:
+
+- `vsss-rs`: Relatively delicate part of omicron (trust quorum), has shipped breakages in the past.
+See https://github.com/oxidecomputer/renovate-config/issues/20[issue #20].
+
+NOTE: If you're excluding a new crate, be sure to add information about it, and why.

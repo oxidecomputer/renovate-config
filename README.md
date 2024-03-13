@@ -16,15 +16,7 @@ Any presets that you want to enable across all repos with Renovate enabled in Ox
 
 ## Rust configuration
 
-By default, the Rust configuration does not automatically create branches (instead requiring users
-to manually approve dependencies in the dependency dashboard).
-
-To enable automatic branch creation, in your repository's `renovate.json`, extend from
-`local>oxidecomputer/renovate-config//rust/autocreate` _after_ extending from the global preset.
-This will enable:
-
-- Automatic branch creation for dependencies
-- Lockfile updates every Monday morning Pacific time
+See [`rust/README.adoc`](rust/README.adoc).
 
 ## Running post upgrade scripts
 

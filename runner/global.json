@@ -13,7 +13,8 @@
     "oxidecomputer/projectv2-tests",
     "oxidecomputer/reflector",
     "oxidecomputer/rfd-api",
-    "oxidecomputer/slog-error-chain"
+    "oxidecomputer/slog-error-chain",
+    "oxidecomputer/online-signing-service"
   ],
   "allowedPostUpgradeCommands": [
     "^tools/renovate-post-upgrade.sh$"

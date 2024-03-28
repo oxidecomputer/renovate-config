@@ -40,7 +40,7 @@ jobs:
       - name: Self-hosted Renovate
         env:
           RENOVATE_TOKEN: ${{ steps.generate_token.outputs.token }}
-        uses: renovatebot/github-action@42c1d3cb1d1ca891765626ba71cdff5e757258de # v40.0.2
+        uses: renovatebot/github-action@7d358366277001f3316d7fa54ff49a81c0158948 # v40.1.7
         with:
           configurationFile: runner/global.json
           env-regex: "^(?:RENOVATE_\\w+|LOG_LEVEL)$"

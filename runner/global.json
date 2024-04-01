@@ -6,6 +6,7 @@
   "platform": "github",
   "repositories": [
     "oxidecomputer/cassette",
+    "oxidecomputer/dendrite",
     "oxidecomputer/four-star",
     "oxidecomputer/maghemite",
     "oxidecomputer/milestone-collector",

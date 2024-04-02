@@ -14,6 +14,7 @@
     "oxidecomputer/omicron",
     "oxidecomputer/online-signing-service",
     "oxidecomputer/opte",
+    "oxidecomputer/partial-struct",
     "oxidecomputer/projectv2-tests",
     "oxidecomputer/reflector",
     "oxidecomputer/rfd-api",

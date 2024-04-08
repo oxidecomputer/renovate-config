@@ -32,7 +32,7 @@ To address this:
 
 The above logic is implemented via a `packageRules` entry in `crates.json` which matches version specifications against a regex.
 
-It would be nice if Renovate could also change `Cargo.toml` files from `x.y` to `x.y.z` along with the `update-lockfile` strategy, but that doesn't appear to be supported in Renovate yet (as of 37.280.0).
+It would be nice if Renovate could also change `Cargo.toml` files from `x.y` to `x.y.z` along with the `update-lockfile` strategy, but that doesn't appear to be supported in Renovate yet (as of 37.280.0). This is tracked in https://github.com/renovatebot/renovate/discussions/28280[discussion #28280 in Renovate upstream].
 
 == Exclusions
 

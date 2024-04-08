@@ -11,6 +11,11 @@
       "matchDatasources": ["crate"],
       "matchPackageNames": ["vsss-rs"],
       "enabled": false
+    },
+    {
+      "matchDatasources": ["crate"],
+      "matchCurrentValue": "/^\\d+(\\.\\d+)?$/",
+      "rangeStrategy": "update-lockfile"
     }
   ]
 }

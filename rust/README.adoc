@@ -12,27 +12,11 @@ This will enable:
 - Automatic branch creation for dependencies
 - Lockfile updates every Monday morning Pacific time
 
-== Updating versions for `x` or `x.y` dependencies
+== Setting `rangeStrategy` to `bump`
 
-Dependencies are often not fully specified as `x.y.z`, and instead specified as `x.y` or just a plain `x` (for crates at versions 1 or above). For example, dependencies can be specified as:
+Our configuration sets the https://docs.renovatebot.com/configuration-options/#rangestrategy[`rangeStrategy`] option to `bump`. This means that if a new version of a crate is released, the version in `Cargo.toml` is also bumped. This is generally desirable since new versions often have features or bugfixes that we'll start depending on--such that resolving to an older version would be a mistake. (But it's reasonable to disagree, in which case you can use the `update-lockfile` strategy.)
 
-[source,toml]
-```
-[dependencies]
-chrono = "0.4"
-syn = "2" 
-```
-
-For these kinds of dependencies, Renovate will not update `Cargo.lock` versions at all if the corresponding `Cargo.toml` version doesn't need to be changed. This can lead to us being behind on crate versions.
-
-To address this:
-
-* Whenever versions are specified as `x` or `x.y` in `Cargo.toml` we use the https://docs.renovatebot.com/configuration-options/#rangestrategy[`update-lockfile` range strategy]. This causes `Cargo.lock` files for such dependencies to be updated.
-* If a complete version `x.y.z` is specified, we want both the `Cargo.lock` and the `Cargo.toml` to be updated. For that, we fall back to the default `auto` strategy—which for Cargo is https://docs.renovatebot.com/modules/manager/cargo/#additional-information[almost always the same as `bump`]. (We don't want `update-lockfile` in these cases, because that won't touch `Cargo.toml`.)
-
-The above logic is implemented via a `packageRules` entry in `crates.json` which matches version specifications against a regex.
-
-It would be nice if Renovate could also change `Cargo.toml` files from `x.y` to `x.y.z` along with the `update-lockfile` strategy, but that doesn't appear to be supported in Renovate yet (as of 37.280.0). This is tracked in https://github.com/renovatebot/renovate/discussions/28280[discussion #28280 in Renovate upstream].
+Note that as of 2024-04-25 (Renovate version 37.323.1), `bump` is actually the default for Renovate's Cargo backend. However, https://github.com/renovatebot/renovate/discussions/28280#discussioncomment-9226113[per a maintainer], the default strategy may change soon.
 
 == Exclusions
 

@@ -5,8 +5,7 @@
     {
       "matchDatasources": ["crate"],
       "matchPackagePatterns": ["*"],
-      "dependencyDashboardApproval": true,
-      "bumpVersion": "patch"
+      "dependencyDashboardApproval": true
     },
     {
       "matchDatasources": ["crate"],

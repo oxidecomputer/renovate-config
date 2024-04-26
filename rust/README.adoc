@@ -18,6 +18,10 @@ Our configuration sets the https://docs.renovatebot.com/configuration-options/#r
 
 Note that as of 2024-04-25 (Renovate version 37.323.1), `bump` is actually the default for Renovate's Cargo backend. However, https://github.com/renovatebot/renovate/discussions/28280#discussioncomment-9226113[per a maintainer], the default strategy may change soon.
 
+== Using `update-lockfile` for `x` or `x.y` dependencies
+
+We currently use the `update-lockfile` strategy for dependencies specified as `x` or `x.y`. While the `bump` strategy also works for those dependencies, it will cause PRs for no-op updates (https://github.com/oxidecomputer/omicron/pull/5633[example]). We're choosing to not introduce that kind of churn.
+
 == Exclusions
 
 The following crates are currently excluded from consideration:

@@ -2,11 +2,11 @@
   "$schema": "https://docs.renovatebot.com/renovate-schema.json",
   "description": "Apply Oxide's global renovate preset",
   "extends": [
+    "github>oxidecomputer/renovate-config:general",
     "github>oxidecomputer/renovate-config:schedule",
     "github>oxidecomputer/renovate-config:rust",
     "github>oxidecomputer/renovate-config:actions",
     "github>oxidecomputer/renovate-config:ignores",
     ":dependencyDashboard"
-  ],
-  "addLabels": ["dependencies"]
+  ]
 }

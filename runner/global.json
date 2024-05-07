@@ -19,7 +19,8 @@
     "oxidecomputer/reflector",
     "oxidecomputer/rfd-api",
     "oxidecomputer/slog-error-chain",
-    "oxidecomputer/v-api"
+    "oxidecomputer/v-api",
+    "oxidecomputer/oxide-github-actions-runner"
   ],
   "allowedPostUpgradeCommands": [
     "^tools/renovate-post-upgrade.sh$"

@@ -10,7 +10,7 @@
     },
     {
       "matchDatasources": ["crate"],
-      "matchPackageNames": ["vsss-rs"],
+      "matchCurrentValue": "/^=/",
       "enabled": false
     },
     {

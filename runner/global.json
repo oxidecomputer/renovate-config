@@ -19,6 +19,7 @@
     "oxidecomputer/reflector",
     "oxidecomputer/rfd-api",
     "oxidecomputer/slog-error-chain",
+    "oxidecomputer/turnstile",
     "oxidecomputer/v-api",
     "oxidecomputer/oxide-github-actions-runner",
     "oxidecomputer/security-operations"

@@ -29,10 +29,5 @@ The following crates are currently excluded from consideration:
 - `vsss-rs`: Relatively delicate part of omicron (trust quorum), has shipped breakages in the past.
 See https://github.com/oxidecomputer/renovate-config/issues/20[issue #20].
 
-- `tokio`: Updates to version 1.39 disabled for release 10 due to risks with Tokio 1.39+ (see
-  https://github.com/oxidecomputer/helios/issues/169[helios#169] and
-  https://github.com/oxidecomputer/helios/pull/171[helios#171] for examples). Planning to re-enable
-  updates early in release 11.
-
 NOTE: If you're excluding a new crate, be sure to add information about it to this section,
 including the reason(s) for exclusion.

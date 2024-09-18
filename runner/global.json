@@ -5,7 +5,9 @@
   ],
   "platform": "github",
   "repositories": [
+    "oxidecomputer/biofuel",
     "oxidecomputer/cassette",
+    "oxidecomputer/crdb-harness",
     "oxidecomputer/dendrite",
     "oxidecomputer/four-star",
     "oxidecomputer/maghemite",

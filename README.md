@@ -4,7 +4,22 @@ Oxide's self-hosted Renovate runner and shared configuration
 
 ## Running Renovate against a new repository
 
-Renovate is available as a Mend hosted service or a self-hosted GitHub action. The [Renovate docs](https://docs.renovatebot.com/getting-started/use-cases/) describe the process of enabling the Mend hosted variant. To enable the Oxide self-hosted version the repository will need to be added to the allow list in `runner/config.json`. Once the change is merged to main, our self-hosted version of Renovate will start running against the repository.
+Renovate is available as a Mend hosted service or a self-hosted GitHub action. The [Renovate docs](https://docs.renovatebot.com/getting-started/use-cases/) describe the process of enabling the Mend hosted variant. To enable the Oxide self-hosted version the repository will need to be added to the allow list in `runner/global.json`. Once the change is merged to main, our self-hosted version of Renovate will start running against the repository.
+
+### Quick-Start: Setup for Oxide self-hosted Renovate
+
+1. Add the following file as `renovate.json` into your repository
+
+```json
+{
+  "$schema": "https://docs.renovatebot.com/renovate-schema.json",
+  "extends": [
+    "local>oxidecomputer/renovate-config"
+  ]
+}
+```
+2. Add your repository name to `runner/global.json` within this repository.
+3. Look for an issue called "Dependency Dashboard" which renovate should open within your repository.
 
 ### Why use the self-hosted version?
 

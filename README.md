@@ -8,6 +8,8 @@ Renovate is available as a Mend hosted service or a self-hosted GitHub action. T
 
 ### Quick-Start: Setup for Oxide self-hosted Renovate
 
+Assuming you want an Oxide repository to be managed by our self-hosted renovate, you can perform the following steps:
+
 1. Add the following file as `renovate.json` into your repository
 
 ```json
@@ -19,7 +21,7 @@ Renovate is available as a Mend hosted service or a self-hosted GitHub action. T
 }
 ```
 2. Add your repository name to `runner/global.json` within this repository.
-3. Look for an issue called "Dependency Dashboard" which renovate should open within your repository.
+3. Look for an issue called "Dependency Dashboard" which renovate should open within your repository. If this exists, your integration was successful.
 
 ### Why use the self-hosted version?
 

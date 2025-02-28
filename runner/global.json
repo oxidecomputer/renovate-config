@@ -28,7 +28,7 @@
     "oxidecomputer/oxide-github-actions-runner",
     "oxidecomputer/security-operations"
   ],
-  "allowedPostUpgradeCommands": [
+  "allowedCommands": [
     "^tools/renovate-post-upgrade.sh$"
   ],
   "onboarding": false

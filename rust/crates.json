@@ -17,6 +17,11 @@
       "matchDatasources": ["crate"],
       "matchCurrentValue": "/^\\d+(\\.\\d+)?$/",
       "rangeStrategy": "update-lockfile"
+    },
+    {
+      "matchDatasources": ["crate"],
+      "matchPackageNames": ["rand", "rand_core", "rand_distr", "rand_seeder"],
+      "groupName": "rand"
     }
   ]
 }

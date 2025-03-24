@@ -9,6 +9,7 @@
     "oxidecomputer/cassette",
     "oxidecomputer/crdb-harness",
     "oxidecomputer/dendrite",
+    "oxidecomputer/dlpi-sys",
     "oxidecomputer/dropshot-verified-body",
     "oxidecomputer/falcon",
     "oxidecomputer/four-star",

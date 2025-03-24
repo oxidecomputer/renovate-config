@@ -10,6 +10,7 @@
     "oxidecomputer/crdb-harness",
     "oxidecomputer/dendrite",
     "oxidecomputer/dropshot-verified-body",
+    "oxidecomputer/falcon",
     "oxidecomputer/four-star",
     "oxidecomputer/maghemite",
     "oxidecomputer/microbot",

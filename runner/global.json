@@ -23,6 +23,7 @@
     "oxidecomputer/opte",
     "oxidecomputer/partial-struct",
     "oxidecomputer/projectv2-tests",
+    "oxidecomputer/p4",
     "oxidecomputer/reflector",
     "oxidecomputer/rfd-api",
     "oxidecomputer/slog-error-chain",

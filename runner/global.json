@@ -29,6 +29,7 @@
     "oxidecomputer/sidecar-lite",
     "oxidecomputer/slog-error-chain",
     "oxidecomputer/softnpu",
+    "oxidecomputer/support-bundle-viewer",
     "oxidecomputer/testbed",
     "oxidecomputer/turnstile",
     "oxidecomputer/v-api",

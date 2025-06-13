@@ -15,6 +15,12 @@
     },
     {
       "matchDatasources": ["crate"],
+      "matchPackageNames": ["schemars"],
+      "matchUpdateTypes": ["major", "minor"],
+      "enabled": false
+    },
+    {
+      "matchDatasources": ["crate"],
       "matchCurrentValue": "/^\\d+(\\.\\d+)?$/",
       "rangeStrategy": "update-lockfile"
     },

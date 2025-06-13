@@ -30,6 +30,7 @@ The following crates are currently excluded from consideration:
 
 - `vsss-rs`: Relatively delicate part of omicron (trust quorum), has shipped breakages in the past.
 See https://github.com/oxidecomputer/renovate-config/issues/20[issue #20].
+- `schemars`: We are on schemars 0.8 and expect to be on this version for the foreseeable future. Hence we disable major (to 1.0) and minor (to 0.9) updates.
 
 NOTE: If you're excluding a new crate, be sure to add information about it to this section,
 including the reason(s) for exclusion.

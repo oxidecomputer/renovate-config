@@ -26,6 +26,11 @@
     },
     {
       "matchDatasources": ["crate"],
+      "matchPackageNames": ["progenitor", "progenitor-client"],
+      "groupName": "progenitor"
+    },
+    {
+      "matchDatasources": ["crate"],
       "matchPackageNames": ["rand", "rand_core", "rand_distr", "rand_seeder"],
       "groupName": "rand"
     }

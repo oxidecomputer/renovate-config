@@ -22,7 +22,10 @@ We currently use the `update-lockfile` strategy for dependencies specified as `x
 
 == Groups
 
-Renovate can be configured to update a group of crates together, via the `groupName` config. Currently, this is used for `rand`-related crates.
+Renovate can be configured to update a group of crates together, via the `groupName` config. Currently, this is used for:
+
+* `progenitor` and `progenitor-client`
+* `rand`-related crates
 
 == Exclusions
 

@@ -26,6 +26,11 @@
     },
     {
       "matchDatasources": ["crate"],
+      "matchPackageNames": ["dropshot-api-manager", "dropshot-api-manager-types"],
+      "groupName": "dropshot-api-manager"
+    },
+    {
+      "matchDatasources": ["crate"],
       "matchPackageNames": ["progenitor", "progenitor-client"],
       "groupName": "progenitor"
     },

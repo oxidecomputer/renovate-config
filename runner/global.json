@@ -26,6 +26,7 @@
     "oxidecomputer/partial-struct",
     "oxidecomputer/projectv2-tests",
     "oxidecomputer/p4",
+    "oxidecomputer/redhawk",
     "oxidecomputer/reflector",
     "oxidecomputer/rfd-api",
     "oxidecomputer/scim2-rs",

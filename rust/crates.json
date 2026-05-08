@@ -38,6 +38,15 @@
       "matchDatasources": ["crate"],
       "matchPackageNames": ["rand", "rand_core", "rand_distr", "rand_seeder"],
       "groupName": "rand"
+    },
+    {
+      "matchSourceUrls": ["https://github.com/oxidecomputer/v-api"],
+      "groupName": "v-api"
+    },
+    {
+      "matchDatasources": ["crate"],
+      "matchPackagePatterns": ["^v-api", "^v-model$"],
+      "groupName": "v-api"
     }
   ]
 }

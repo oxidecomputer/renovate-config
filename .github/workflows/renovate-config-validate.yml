@@ -20,10 +20,10 @@ jobs:
           node-version: 24
 
       - name: Validate preset files
+        # TODO: Validate runner/global.json; unsupported by renovate-config-validator
+        # Maybe a basic JSON Schema validation
         run: |
           npx --yes --package renovate -- renovate-config-validator --strict \
             *.json \
             actions/*.json \
             rust/*.json
-          # TODO: Validate runner/global.json; unsupported by renovate-config-validator
-          # Maybe a basic JSON Schema validation

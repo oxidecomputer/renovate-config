@@ -4,7 +4,7 @@
   "packageRules": [
     {
       "matchDatasources": ["crate"],
-      "matchPackagePatterns": ["*"],
+      "matchPackageNames": ["*"],
       "dependencyDashboardApproval": true,
       "rangeStrategy": "bump"
     },
@@ -48,7 +48,7 @@
     },
     {
       "matchDatasources": ["crate"],
-      "matchPackagePatterns": ["^v-api", "^v-cli", "^v-model$"],
+      "matchPackageNames": ["/^v-api/", "/^v-cli/", "/^v-model$/"],
       "groupName": "v-api"
     }
   ]

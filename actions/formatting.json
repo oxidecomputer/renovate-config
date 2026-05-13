@@ -4,7 +4,7 @@
   "packageRules": [
     {
       "matchManagers": ["github-actions"],
-      "matchPackagePatterns": ["*"],
+      "matchPackageNames": ["*"],
       "prBodyDefinitions": {
         "Package": "[{{{depName}}}](https://github.com/{{{depName}}})",
         "Change": "[`{{{displayFrom}}}` -> `{{{displayTo}}}`](https://github.com/{{{depName}}}/compare/{{{displayFrom}}}...{{{displayTo}}})"

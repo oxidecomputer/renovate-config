@@ -1,20 +1,21 @@
 {
   "$schema": "https://docs.renovatebot.com/renovate-schema.json",
   "description": "Upgrade the `channel` field in the `rust-toolchain.toml` file if present",
-  "regexManagers": [
+  "customManagers": [
     {
-      "fileMatch": ["^rust-toolchain\\.toml?$"],
+      "customType": "regex",
+      "managerFilePatterns": ["/^rust-toolchain\\.toml?$/"],
       "matchStrings": [
         "channel\\s*=\\s*\"(?<currentValue>\\d+\\.\\d+(\\.\\d+)?)\""
       ],
       "depNameTemplate": "rust",
-      "lookupNameTemplate": "rust-lang/rust",
+      "packageNameTemplate": "rust-lang/rust",
       "datasourceTemplate": "github-releases"
     }
   ],
   "packageRules": [
     {
-      "matchManagers": ["regex"],
+      "matchManagers": ["custom.regex"],
       "matchPackageNames": ["rust"],
       "commitMessageTopic": "Rust"
     }

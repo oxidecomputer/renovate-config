@@ -50,6 +50,16 @@
       "matchDatasources": ["crate"],
       "matchPackagePatterns": ["^v-api", "^v-cli", "^v-model$"],
       "groupName": "v-api"
+    },
+    {
+      "matchDatasources": ["crate"],
+      "matchPackageNames": [
+        "reqwest",
+        "reqwest-tracing",
+        "reqwest-retry",
+        "reqwest-middleware"
+      ],
+      "groupName": "reqwest"
     }
   ]
 }

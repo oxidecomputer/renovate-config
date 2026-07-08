@@ -6,6 +6,7 @@
   "platform": "github",
   "repositories": [
     "oxidecomputer/biofuel",
+    "oxidecomputer/careers",
     "oxidecomputer/cassette",
     "oxidecomputer/crdb-harness",
     "oxidecomputer/dendrite",

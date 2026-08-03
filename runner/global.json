@@ -33,6 +33,7 @@
     "oxidecomputer/redhawk",
     "oxidecomputer/reflector",
     "oxidecomputer/rfd-api",
+    "oxidecomputer/rfd-site",
     "oxidecomputer/scim2-rs",
     "oxidecomputer/security-operations",
     "oxidecomputer/sidecar-lite",

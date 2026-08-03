@@ -34,6 +34,7 @@
     "oxidecomputer/reflector",
     "oxidecomputer/rfd-api",
     "oxidecomputer/scim2-rs",
+    "oxidecomputer/security-operations",
     "oxidecomputer/sidecar-lite",
     "oxidecomputer/slog-error-chain",
     "oxidecomputer/softnpu",

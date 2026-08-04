@@ -43,6 +43,11 @@
       "groupName": "rand"
     },
     {
+      "matchDatasources": ["crate"],
+      "matchPackageNames": ["clap", "clap_complete"],
+      "groupName": "clap"
+    },
+    {
       "matchSourceUrls": ["https://github.com/oxidecomputer/v-api"],
       "groupName": "v-api"
     },

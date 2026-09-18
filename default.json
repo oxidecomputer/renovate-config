@@ -7,6 +7,7 @@
     "github>oxidecomputer/renovate-config:rust",
     "github>oxidecomputer/renovate-config:actions",
     "github>oxidecomputer/renovate-config:ignores",
+    "github>oxidecomputer/renovate-config:lock-file-maintenance",
     ":dependencyDashboard"
   ]
 }

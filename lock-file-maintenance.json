@@ -1,0 +1,8 @@
+{
+  "$schema": "https://docs.renovatebot.com/renovate-schema.json",
+  "description": "Split lock file maintenance into one branch per manager and per lock file directory",
+  "lockFileMaintenance": {
+    "branchTopic": "lock-file-maintenance-{{manager}}{{#if packageFileDir}}-{{replace '/' '-' packageFileDir}}{{/if}}",
+    "commitMessageSuffix": "({{manager}}{{#if packageFileDir}}: {{packageFileDir}}{{/if}})"
+  }
+}

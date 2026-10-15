@@ -27,6 +27,7 @@
     "oxidecomputer/newtype-uuid",
     "oxidecomputer/omicron",
     "oxidecomputer/opte",
+    "oxidecomputer/oxide-computer",
     "oxidecomputer/partial-struct",
     "oxidecomputer/projectv2-tests",
     "oxidecomputer/p4",

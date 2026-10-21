@@ -48,6 +48,11 @@
       "groupName": "clap"
     },
     {
+      "matchDatasources": ["crate"],
+      "matchPackageNames": ["diesel", "diesel_derives"],
+      "groupName": "diesel"
+    },
+    {
       "matchSourceUrls": ["https://github.com/oxidecomputer/v-api"],
       "groupName": "v-api"
     },

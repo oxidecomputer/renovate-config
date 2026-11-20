@@ -9,6 +9,7 @@
     "oxidecomputer/careers",
     "oxidecomputer/cassette",
     "oxidecomputer/crdb-harness",
+    "oxidecomputer/crucible",
     "oxidecomputer/dendrite",
     "oxidecomputer/dlpi-sys",
     "oxidecomputer/dropshot-api-manager",
